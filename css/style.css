@@ -73,8 +73,9 @@ nav.navbar {
 }
 
 .nav_list {
-    padding: 15px 0;
+    padding: 15px 0 0 0;
     line-height: 4ch;
+    overflow-y: hidden;
 }
 
 .nav_list li a {
@@ -322,4 +323,53 @@ img#img8 {
 
 * {
     overflow-x: hidden;
+}
+
+.dropdown-about {
+    display: none;
+    background-color: black;
+    color: white!important;
+    padding: 2% 10%;
+    text-align: left;
+    /* margin: 0 auto; */
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top right;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    50% {
+        transform: scaleY(1.5)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+.dropdown-about ul li a:hover {
+    background-color: #006341;
+}
+
+.about-top li a,
+.service-top li a,
+.quick-links-top li a {
+    display: block;
+    flex-direction: column;
+    line-height: 2%;
+    color: white;
+}
+
+.about-top,
+.service-top,
+.quick-links-top {
+    float: left;
+    margin-left: 100px;
+}
+
+#nav_7:hover .dropdown-about {
+    display: block;
+    /* display: flex; */
+    /* transition: 1s ease; */
 }
