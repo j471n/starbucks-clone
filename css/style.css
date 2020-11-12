@@ -280,14 +280,14 @@ img#img8 {
 } */
 
 .ham {
-    width: 100%;
+    /* width: 100%; */
     visibility: hidden;
     z-index: 1000;
     display: block;
     position: absolute;
     left: 88%;
     cursor: pointer;
-    top: 6.6%;
+    top: 5.9%;
 }
 
 .bar1,
