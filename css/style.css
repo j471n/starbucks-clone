@@ -327,7 +327,8 @@ img#img8 {
 
 .dropdown-about,
 .dropdown-card,
-.dropdown-coffee {
+.dropdown-coffee,
+.dropdown-menu {
     display: none;
     background-color: black;
     color: white!important;
@@ -352,8 +353,9 @@ img#img8 {
 
 .dropdown-about ul li a:hover,
 .dropdown-card ul li a:hover,
-.dropdown-coffee ul li a :hover {
-    background-color: #006341;
+.dropdown-coffee ul li a:hover,
+.dropdown-menu ul li a:hover {
+    background-color: #3AA478;
 }
 
 .menu li a {
@@ -370,12 +372,25 @@ img#img8 {
 
 #nav_4:hover~section .dropdown-card,
 #nav_7:hover~section .dropdown-about,
-#nav_0:hover~section .dropdown-coffee {
+#nav_0:hover~section .dropdown-coffee,
+#nav_1:hover~section .dropdown-menu {
     display: block;
-    /* display: flex; */
-    /* transition: 1s ease; */
+
 }
+
+.dropdown-card:hover,
+.dropdown-about:hover,
+.dropdown-coffee:hover,
+.dropdown-menu:hover {
+    display: block;
+
+}
+
 
 .dropdown-coffee .menu {
     margin-left: 30px;
+}
+
+.dropdown-menu .menu {
+    margin-left: 140px;
 }
