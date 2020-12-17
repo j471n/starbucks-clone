@@ -14,7 +14,7 @@ findStore.addEventListener('click', () => {
 
 hamButton.addEventListener('click', ()=>{
 
-    hamButton.classList.toggle("change");
+    // hamButton.classList.toggle("change");
     openNav();
 });
 
